@@ -10,7 +10,7 @@ import Foundation
 // MARK: - GetAllCharacters
 struct GetAllCharacters: Codable {
     let info: Info
-    let results: [Result]
+    let results: [Characters]
 }
 
 // MARK: - Info
@@ -21,7 +21,7 @@ struct Info: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Characters: Codable, Identifiable {
     let id: Int
     let name, status, species, type: String
     let gender: String

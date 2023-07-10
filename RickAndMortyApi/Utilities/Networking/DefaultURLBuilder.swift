@@ -12,7 +12,7 @@ enum URLBuilderError: Error {
 }
 
 enum DefaultURLBuilder {
-    // MARK: Default query params
+    
     
     
     static func build(for endpoint: Endpoint, params: [String: String] = [:]) throws -> URL {

@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var vm = HomeViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        List {
+            ForEach(vm.allCharacters) { character in
+                VStack {
+                    Text(character.name)
+                    
+                    
+                    
+                }
+            }
         }
-        .padding()
+        .task {
+            await vm.loadCharcters()
+        }
     }
 }
 
