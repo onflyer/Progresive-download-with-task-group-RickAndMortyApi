@@ -34,7 +34,9 @@ final class HomeViewModel: ObservableObject {
     func loadCharcters() async {
         do {
             let allResponse: GetAllCharacters = try await networkingService.fetchData(api: APIConstructor(endpoint:.getAllCharacters))
+            await MainActor.run(body: {
             self.allCharacters = allResponse.results
+            })
         } catch {
             await MainActor.run(body: {
                 errorMsg = "Error: \(error)"

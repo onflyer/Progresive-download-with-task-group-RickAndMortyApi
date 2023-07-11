@@ -10,12 +10,16 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var vm = HomeViewModel()
     
+    
     var body: some View {
         
         List {
             ForEach(vm.allCharacters) { character in
                 VStack {
                     Text(character.name)
+                    Text("Created at: \(character.created.formatted(date: .numeric, time: .shortened))")
+                    
+                    
                     
                     
                     

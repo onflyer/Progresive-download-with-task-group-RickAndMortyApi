@@ -7,7 +7,4 @@
 
 import Foundation
 
-//let stringToDate = GetSingleCharcter.previewExample().created
-//let expectedFormat = Date.ISO8601FormatStyle()
-//let date = try! Date(stringToDate, strategy: .iso8601)
 
