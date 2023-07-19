@@ -30,13 +30,27 @@ struct Characters: Codable, Identifiable {
     let episode: [String]
     let url: String
     let created: Date
+    
+    var locationName: String {
+       return location.name
+    }
+    var locationUrl: String {
+        return location.url
+    }
+    
 }
+
+
+
 
 // MARK: - Location
 struct Location: Codable {
     let name: String
     let url: String
 }
+
+
+
 
 // MARK: - Encode/decode helpers
 

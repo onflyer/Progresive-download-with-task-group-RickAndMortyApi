@@ -19,6 +19,7 @@
 		3B772B372A5C25D300559979 /* EndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B772B362A5C25D300559979 /* EndpointEnum.swift */; };
 		3B772B392A5C5D5C00559979 /* DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B772B382A5C5D5C00559979 /* DateFormater.swift */; };
 		3B772B432A5C71CB00559979 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B772B422A5C71CB00559979 /* HomeViewModel.swift */; };
+		3BD1FF632A680831008B34E8 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1FF622A680831008B34E8 /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		3B772B362A5C25D300559979 /* EndpointEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointEnum.swift; sourceTree = "<group>"; };
 		3B772B382A5C5D5C00559979 /* DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormater.swift; sourceTree = "<group>"; };
 		3B772B422A5C71CB00559979 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3BD1FF622A680831008B34E8 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		3B772B252A5C1B7E00559979 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3BD1FF622A680831008B34E8 /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				3B772B432A5C71CB00559979 /* HomeViewModel.swift in Sources */,
 				3B772B2B2A5C207200559979 /* GetAllCharactersModel.swift in Sources */,
 				3B772B172A5C1AD500559979 /* ContentView.swift in Sources */,
+				3BD1FF632A680831008B34E8 /* ImageView.swift in Sources */,
 				3B772B372A5C25D300559979 /* EndpointEnum.swift in Sources */,
 				3B772B392A5C5D5C00559979 /* DateFormater.swift in Sources */,
 				3B772B352A5C259D00559979 /* QueryItemsConstructor.swift in Sources */,

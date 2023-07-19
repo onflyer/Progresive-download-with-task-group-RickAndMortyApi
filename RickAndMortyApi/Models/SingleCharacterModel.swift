@@ -25,6 +25,14 @@ struct GetSingleCharcter: Codable, Identifiable {
         let url: String
     }
     
+    var locationName: String {
+       return location.name
+    }
+    var locationUrl: String {
+        return location.url
+    }
+    
+    
     
     
     
@@ -44,6 +52,10 @@ struct GetSingleCharcter: Codable, Identifiable {
     }
 
 }
+
+
+
+
 
 
 

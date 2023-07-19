@@ -14,20 +14,14 @@ struct ContentView: View {
     var body: some View {
         
         List {
-            ForEach(vm.allCharacters) { character in
-                VStack {
-                    Text(character.name)
-                    Text("Created at: \(character.created.formatted(date: .numeric, time: .shortened))")
-                    
-                    
-                    
-                    
-                    
-                }
+            ForEach(vm.charachtersWithTaskGroup) { character in
+                ImageView(char: character)
+                
+
             }
         }
         .task {
-            await vm.loadCharcters()
+            await vm.loadCharactersWithTaskGroup(ids: Array(0...100))
         }
     }
 }
