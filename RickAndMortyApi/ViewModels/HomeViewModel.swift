@@ -17,7 +17,7 @@ final class HomeViewModel: ObservableObject {
     let networkingService = NetworkingService()
     
     
-    
+    //MARK: SHOW JSON AS IT DOWNLOADS BY CHAR IDS, NOT WAITING FOR WHOLE RESPONSE
     @MainActor
     func loadCharactersWithTaskGroup(ids: [Int]) async {
         
@@ -48,7 +48,11 @@ final class HomeViewModel: ObservableObject {
             
         }
         
+        
         print(charachtersWithTaskGroup.count)
+       
+        //MARK: SORT BY ID (1-100)
+        charachtersWithTaskGroup.sort { $0.id < $1.id }
         
     }
     
