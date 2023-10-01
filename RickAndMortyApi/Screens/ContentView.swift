@@ -20,8 +20,11 @@ struct ContentView: View {
 
             }
         }
+        .refreshable {
+            await vm.loadCharactersWithTaskGroup(ids: Array(0...50))
+        }
         .task {
-            await vm.loadCharactersWithTaskGroup(ids: Array(0...100))
+            await vm.loadCharactersWithTaskGroup(ids: Array(0...50))
         }
     }
 }
