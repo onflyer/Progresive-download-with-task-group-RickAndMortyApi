@@ -1,4 +1,5 @@
 # Progresive-download-with-task-group-RickAndMortyApi
+
 In this project im using task group to show images as they are downloaded, not waiting for whole JSON to download
 
 
